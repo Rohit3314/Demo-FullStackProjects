@@ -1,0 +1,26 @@
+<div align="center">
+    <h3> Data</h3>
+    <br>
+    
+             <table border="1">
+                         <thead>           
+                                <tr>
+                                <th>Acc No </th>
+                                <th>Name</th>
+                                <th>balance </th>
+                                
+                              </tr>
+                              
+                         </thead>
+                         <tbody>
+                         
+                              <tr *ngFor="let d of data">
+                                    <td> {{d.accno}} </td>
+                                    <td> {{d.owner}} </td>
+                                    <td> {{d.balance}} </td>
+                                    
+                              </tr>
+                         
+                        </tbody>
+             </table>
+    </div>

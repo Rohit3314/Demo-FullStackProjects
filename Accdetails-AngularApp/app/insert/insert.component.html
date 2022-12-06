@@ -1,0 +1,21 @@
+<div align="center">
+    <h2> Insert Your Details </h2>
+    <br>
+<form #insertform="ngForm" (ngSubmit)="insertdata(insertform)">
+
+    <label> Enter Account no : </label>
+    <input type="number" id="accno" #accno (ngModel)="accno" name="accno" >
+    <br><br>
+    <label> owner : </label>
+    <input type="text" id="owner" #owner (ngModel)="owner" name="owner" >
+    <br><br>
+    <label> Enter Balance : </label>
+    <input type="number" id="balance" #balance (ngModel)="balance" name="balance" >
+    <br>
+    <br>
+
+    <input type="submit" Value="Insert Details" >
+
+
+</form>
+</div>

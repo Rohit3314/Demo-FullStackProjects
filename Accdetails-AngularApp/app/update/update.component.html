@@ -1,0 +1,22 @@
+
+<div align="center">
+    <h2>  Update Form</h2>
+    <br><br>
+<form #updateform="ngForm" (ngSubmit)="updatedata(updateform)">
+
+  <label>Enter Acc No: </label>
+   <input type="number" id="accno" #accno (ngModel)="accno" name="accno"> 
+   <br>
+
+   <label>Enter Owner: </label>
+   <input type="text" id="owner" #owner (ngModel)="owner" name="owner"> 
+   <br>
+   
+  <label>Enter Balance: </label>
+  <input type="number" id="balance" #balance (ngModel)="balance" name="balance"> 
+  <br>
+  <br>
+  <input type="submit" value="Update Details" >
+
+</form>
+</div>

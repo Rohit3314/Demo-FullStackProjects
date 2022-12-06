@@ -1,0 +1,22 @@
+
+<div align="center">
+
+<table border=1>
+      <thead>
+               <tr>
+                   <th> ID </th>
+                   <th> Name </th>
+                   <th> Salary </th>
+               </tr>
+
+      </thead>
+      <tbody>
+        <tr  *ngFor="let e of data">
+            <td> {{e.eid}} </td>
+            <td> {{e.ename}}</td>
+            <td> {{e.esalary}} </td>
+        </tr>
+
+        </tbody>
+</table>
+</div>
